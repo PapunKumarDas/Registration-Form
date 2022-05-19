@@ -13,7 +13,14 @@
         .footer{
             text-align: center;
         }
+        .required:after {
+    content:" *";
+    color: red;
+  }
     </style>
+
+
+
    
     <title>Document</title>
     </head>
@@ -25,23 +32,25 @@
             <form action="abc.html">
                 <div class="form-control p-3">
                     <div class="mb-3 mt-3">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label">Name</label><span style="color:#ff0000">*</span>
                         <div class="row">
                             <div class="col">
-                              <input type="text" class="form-control"  required placeholder="First">
+                              <input type="text" class="form-control required"  required placeholder="First">
                             </div>
                             <div class="col">
                               <input type="text" class="form-control" required placeholder="Last">
                             </div>
                           </div>
 
-                        <label for="date" class="form-label">Date of Birth</label>
+                          
+
+                        <label for="date" class="form-label">Date of Birth</label><span style="color:#ff0000">*</span>
                         <input type="date" class="form-control" placeholder="MM/DD/YYYY" name="date">
 
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label">Email</label><span style="color:#ff0000">*</span>
                         <input type="email" class="form-control"  name="email"><br>
 
-                        <label for="fname" class="form-label">Father'sName</label>
+                        <label for="fname" class="form-label">Father'sName</label><span style="color:#ff0000">*</span>
                         <div class="row">
                             <div class="col">
                               <input type="text" class="form-control" placeholder="First name">
@@ -51,7 +60,7 @@
                             </div>
                           </div>
 
-                        <label for="mname" class="form-label">Mother'sName</label>
+                        <label for="mname" class="form-label">Mother'sName</label><span style="color:#ff0000">*</span>
                         <div class="row">
                             <div class="col">
                               <input type="text" class="form-control" placeholder="First name">
@@ -61,14 +70,14 @@
                             </div>
                           </div>
 
-                        <label for="gender" class="form-label">Gender</label><br>
+                        <label for="gender" class="form-label">Gender</label><span style="color:#ff0000">*</span> <br>
                         <input type="radio"  name="mf"><label for="mgender" class="form-label">M</label><br>
                         <input type="radio" name="mf"><label for="mgender" class="form-label">F</label><br>
 
-                        <label for="Nationality" class="form-label">Nationality</label><br>
+                        <label for="Nationality" class="form-label">Nationality</label><span style="color:#ff0000">*</span> <br>
                         <input type="text" required class="form-control" placeholder=""><br>
 
-                        <label for="Home Address" class="form-label">Home Address</label><br>
+                        <label for="Home Address" class="form-label">Home Address</label><span style="color:#ff0000">*</span> <br>
                         <input type="text" required class="form-control" placeholder="Street Address"><br>
                         <div class="row">
                             <div class="col">
@@ -79,15 +88,14 @@
                             </div>
                         </div>
 
-                        <label for="Telephone-Home" class="form-label">Telephone-Home</label><br>
+                        <label for="Telephone-Home" class="form-label">Telephone-Home</label><span style="color:#ff0000">*</span> <br>
                         <input type="number" required class="form-control" placeholder="### ### ####"><br>
 
-                        <label for="Telephone-Mobile" class="form-label">Telephone-Mobile</label><br>
+                        <label for="Telephone-Mobile" class="form-label">Telephone-Mobile</label><span style="color:#ff0000">*</span> <br>
                         <input type="number" required class="form-control" placeholder="### ### ####"><br>    
                         
                         
-                        <label for="Telephone-Mobile" class="form-label">Telephone-Mobile</label><br>
-                        <input type="number" required class="form-control" placeholder="### ### ####"><br>      
+                  
                         <!-- <button class="btn btn-success align-content-center">Submit</button> -->
 
                         
@@ -103,42 +111,45 @@
                     <div class="mb-3 mt-3">
 
                         <!-- hsc -->
-                        <label for="HSC Institution name" class="form-label">HSC Institution name</label><br>
+                        <label for="HSC Institution name" class="form-label">HSC Institution name</label> <span style="color:#ff0000">*</span><br>
                         <input type="text" required class="form-control" placeholder="HSC Institution name"><br>                       
         
-                        <label for="HSC Bord" class="form-label">HSC Bord</label><br>
+                        <label for="HSC Bord" class="form-label">HSC Bord</label> <span style="color:#ff0000">*</span><br>
                         <select class="form-select">
+                          <option value="">Select</option>
                             <option value="">CBSE</option>
                             <option value="">ICSC</option>
                             <option value="">State Board</option>
                         </select>
                         
-                        <label for="HSC Percentage" class="form-label">HSC Percentage</label><br>
+                        <label for="HSC Percentage" class="form-label">HSC Percentage</label> <span style="color:#ff0000">*</span><br>
                         <input type="number" required class="form-control" placeholder="HSC Percentage"><br> 
 
                          <!-- SSC part  -->
-                        <label for="SSC Institution name" class="form-label">SSC Institution name</label><br>
+                        <label for="SSC Institution name" class="form-label">SSC Institution name</label> <span style="color:#ff0000">*</span><br>
                         <input type="text" required class="form-control" placeholder="SSC Institution name"><br>                       
         
-                        <label for="HSC Bord" class="form-label">HSC Bord</label><br>
+                        <label for="HSC Bord" class="form-label">HSC Bord</label> <span style="color:#ff0000">*</span><br>
                         <select class="form-select">
+                          
+                            <option value="">Select</option>
                             <option value="">CBSE</option>
                             <option value="">ICSC</option>
                             <option value="">State Board</option>
                         </select>
                         
-                        <label for="SSC Percentage" class="form-label">SSC Percentage</label><br>
+                        <label for="SSC Percentage" class="form-label">SSC Percentage</label><span style="color:#ff0000">*</span><br>
                         <input type="number" required class="form-control" placeholder="SSC Percentage"><br>                       
 
                         <!-- Current education -->
-                        <label for="Current education" class="form-label">Current Pursuing</label><br>
+                        <label for="Current education" class="form-label">Current Pursuing</label><span style="color:#ff0000">*</span><br>
                         <input type="text" required class="form-control" placeholder="Current Pursuing"><br>                       
 
                         <label for="Institution name" class="form-label">Institution name</label><br>
-                        <input type="text" required class="form-control" placeholder="Institution name"><br>                       
+                        <input type="text" required class="form-control" placeholder="Institution name"><span style="color:#ff0000">*</span><br>                       
 
                         <!-- percentage -->
-                        <label for="percentage" class="form-label">overal percentage</label><br>
+                        <label for="percentage" class="form-label">overal percentage</label> <span style="color:#ff0000">*</span><br>
                         <input type="number" required class="form-control" placeholder="percentage"><br>                       
 
                         <!-- backlog -->
@@ -158,16 +169,16 @@
             <form action="abc.html">
                 <div class="form-control p-3">
                     <div class="mb-3 mt-3">
-                        <label for="backlog" class="form-label">Recent Passphoto</label>
+                        <label for="backlog" class="form-label">Recent Passphoto</label><span style="color:#ff0000">*</span>
                         <input type="file" id="4m" class="form-control"><br>
 
-                        <label for="up2" class="form-label">HSC marksheet</label>
+                        <label for="up2" class="form-label">HSC marksheet</label><span style="color:#ff0000">*</span>
                         <input type="file" id="4m" class="form-control"><br>      
 
-                        <label for="up3" class="form-label">SSC Marksheet</label>
+                        <label for="up3" class="form-label">SSC Marksheet</label><span style="color:#ff0000">*</span>
                         <input type="file" id="4m" class="form-control"><br>    
 
-                        <label for="up4" class="form-label">All semester Mark</label>
+                        <label for="up4" class="form-label">All semester Mark</label><span style="color:#ff0000">*</span>
                         <input type="file" id="10m" class="form-control"><br>                       
 
                     </div>
@@ -178,7 +189,7 @@
 
         <section class="footer">
           <div class="container py-2">
-            <p>Copyright ©2022 - Archana Rani Behera</p>
+            <p><b>Copyright ©2022 - Archana Rani Behera<b></p>
           </div>
         </section>
 </body>
