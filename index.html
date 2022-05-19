@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        .form-control{
+            background-color: aliceblue;
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+   
+    <title>Document</title>
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <div class="">
+
+        <!-- first page -->
+        <div class="container mt-3 mb-3">
+            <form action="abc.html">
+                <div class="form-control p-3">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control"  required placeholder="First">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" required placeholder="Last">
+                            </div>
+                          </div>
+
+                        <label for="date" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" placeholder="MM/DD/YYYY" name="date">
+
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control"  name="email"><br>
+
+                        <label for="fname" class="form-label">Father'sName</label>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                          </div>
+
+                        <label for="mname" class="form-label">Mother'sName</label>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                          </div>
+
+                        <label for="gender" class="form-label">Gender</label><br>
+                        <input type="radio"  name="mf"><label for="mgender" class="form-label">M</label><br>
+                        <input type="radio" name="mf"><label for="mgender" class="form-label">F</label><br>
+
+                        <label for="Nationality" class="form-label">Nationality</label><br>
+                        <input type="text" required class="form-control" placeholder=""><br>
+
+                        <label for="Home Address" class="form-label">Home Address</label><br>
+                        <input type="text" required class="form-control" placeholder="Street Address"><br>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Country">
+                            </div>
+                        </div>
+
+                        <label for="Telephone-Home" class="form-label">Telephone-Home</label><br>
+                        <input type="number" required class="form-control" placeholder="### ### ####"><br>
+
+                        <label for="Telephone-Mobile" class="form-label">Telephone-Mobile</label><br>
+                        <input type="number" required class="form-control" placeholder="### ### ####"><br>    
+                        
+                        
+                        <label for="Telephone-Mobile" class="form-label">Telephone-Mobile</label><br>
+                        <input type="number" required class="form-control" placeholder="### ### ####"><br>      
+                        <!-- <button class="btn btn-success align-content-center">Submit</button> -->
+
+                        
+                    </div>
+                </div>
+            </form>
+        </div> 
+
+         <!-- Second page -->
+        <div class="container mt-5 mb-3">
+            <form action="abc.html">
+                <div class="form-control p-3">
+                    <div class="mb-3 mt-3">
+
+                        <!-- hsc -->
+                        <label for="HSC Institution name" class="form-label">HSC Institution name</label><br>
+                        <input type="text" required class="form-control" placeholder="HSC Institution name"><br>                       
+        
+                        <label for="HSC Bord" class="form-label">HSC Bord</label><br>
+                        <select class="form-select">
+                            <option value="">CBSE</option>
+                            <option value="">ICSC</option>
+                            <option value="">State Board</option>
+                        </select>
+                        
+                        <label for="HSC Percentage" class="form-label">HSC Percentage</label><br>
+                        <input type="number" required class="form-control" placeholder="HSC Percentage"><br> 
+
+                         <!-- SSC part  -->
+                        <label for="SSC Institution name" class="form-label">SSC Institution name</label><br>
+                        <input type="text" required class="form-control" placeholder="SSC Institution name"><br>                       
+        
+                        <label for="HSC Bord" class="form-label">HSC Bord</label><br>
+                        <select class="form-select">
+                            <option value="">CBSE</option>
+                            <option value="">ICSC</option>
+                            <option value="">State Board</option>
+                        </select>
+                        
+                        <label for="SSC Percentage" class="form-label">SSC Percentage</label><br>
+                        <input type="number" required class="form-control" placeholder="SSC Percentage"><br>                       
+
+                        <!-- Current education -->
+                        <label for="Current education" class="form-label">Current Pursuing</label><br>
+                        <input type="text" required class="form-control" placeholder="Current Pursuing"><br>                       
+
+                        <label for="Institution name" class="form-label">Institution name</label><br>
+                        <input type="text" required class="form-control" placeholder="Institution name"><br>                       
+
+                        <!-- percentage -->
+                        <label for="percentage" class="form-label">overal percentage</label><br>
+                        <input type="number" required class="form-control" placeholder="percentage"><br>                       
+
+                        <!-- backlog -->
+
+                        <label for="backlog" class="form-label">backlog</label><br>
+                        <input type="number"  class="form-control" placeholder="backlog"><br>                       
+
+
+        
+                    </div>
+                </div>
+            </form>
+        </div> 
+
+        <!-- third page -->
+        <div class="container mt-5 mb-3">
+            <form action="abc.html">
+                <div class="form-control p-3">
+                    <div class="mb-3 mt-3">
+                        <label for="backlog" class="form-label">Recent Passphoto</label>
+                        <input type="file" id="4m" class="form-control"><br>
+
+                        <label for="up2" class="form-label">HSC marksheet</label>
+                        <input type="file" id="4m" class="form-control"><br>      
+
+                        <label for="up3" class="form-label">SSC Marksheet</label>
+                        <input type="file" id="4m" class="form-control"><br>    
+
+                        <label for="up4" class="form-label">All semester Mark</label>
+                        <input type="file" id="10m" class="form-control"><br>                       
+
+                    </div>
+                </div>
+            </form>
+        </div> 
+
+        <section class="footer">
+          <div class="container py-2">
+            <p>Copyright ©2022 - Archana Rani Behera</p>
+          </div>
+        </section>
+</body>
+</html>
