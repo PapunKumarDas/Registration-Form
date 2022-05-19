@@ -1,5 +1,5 @@
 
-const input = document.getElementById('pass')
+const input = document.getElementById('4m')
 
 input.addEventListener('change', (event) => {
   const target = event.target
@@ -17,7 +17,7 @@ input.addEventListener('change', (event) => {
 })
 
 
-const input2 = document.getElementById('pass')
+const input2 = document.getElementById('10m')
 
 input2.addEventListener('change', (event) => {
   const target = event.target
