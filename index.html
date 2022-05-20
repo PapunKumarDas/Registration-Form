@@ -42,12 +42,12 @@
                             <div class="col">
                               <input type="text" class="form-control" required placeholder="Last">
                             </div>
-                          </div>
+                          </div> <br>
 
                           
 
                         <label for="date" class="form-label">Date of Birth</label><span style="color:#ff0000">*</span>
-                        <input type="date" class="form-control" placeholder="MM/DD/YYYY" name="date">
+                        <input type="date" class="form-control" placeholder="MM/DD/YYYY" name="date"> <br>
 
                         <label for="email" class="form-label">Email</label><span style="color:#ff0000">*</span>
                         <input type="email" class="form-control" required name="email"><br>
@@ -61,6 +61,7 @@
                               <input type="text" class="form-control" required placeholder="Last name">
                             </div>
                           </div>
+                          <br>
 
                         <label for="mname" class="form-label">Mother'sName</label><span style="color:#ff0000">*</span>
                         <div class="row">
@@ -70,26 +71,19 @@
                             <div class="col">
                               <input type="text" class="form-control" required placeholder="Last name">
                             </div>
-                          </div>
+                          </div> <br>
 
                         <label for="gender" class="form-label">Gender</label><span style="color:#ff0000">*</span> <br>
                         <input type="radio"  name="mf"><label for="mgender" class="form-label">M</label><br>
                         <input type="radio" name="mf"><label for="mgender" class="form-label">F</label><br>
+                        <br>
 
+                        <label for="Nationality" class="form-label">Nationality</label><span style="color:#ff0000">*</span> <br>
+                        <input type="text" class="form-control" required placeholder="Nationality"> <br>
                         
 
-                        <label for="Nationality" class="form-label">Nationality</label> <span style="color:#ff0000">*</span><br>
-                        <select class="form-select" required>
-                          <option value="">Select</option>
-                            <option value="">India</option>
-                            <option value="">USA</option>
-                            <option value="">UAE</option>
-                            <option value="">Chaina</option>
-                            <option value="">Afghanistan</option>
-                            <option value="">Albania</option>
-                            <option value="">American Samoa</option>
-                            <option value="">Andorra</option>
-                        </select>
+                        <!-- <label for="Nationality" class="form-label">Nationality</label> <span style="color:#ff0000">*</span><br> -->
+                       
 
                         <label for="Home Address" class="form-label">Home Address</label><span style="color:#ff0000">*</span> <br>
                         <input type="text" required class="form-control" required placeholder="Street Address"><br>
@@ -98,10 +92,24 @@
                               <input type="text" class="form-control" required placeholder="City">
                             </div>
                             <div class="col">
-                              <input type="text" class="form-control" required placeholder="Country">
+
+                              <select class="form-select" required>
+                                <option value="">Country</option>
+                                  <option value="">India</option>
+                                  <option value="">USA</option>
+                                  <option value="">UAE</option>
+                                  <option value="">UAE</option>
+                                  <option value="">Afghanistan</option>
+                                  <option value="">Albania</option>
+                                  <option value="">American Samoa</option>
+                                  <option value="">Andorra</option>
+                              </select>
+                              
+
                             </div>
                         </div>
 
+                        <br>
                         <label for="Telephone-Home" class="form-label">Telephone-Home</label><span style="color:#ff0000">*</span> <br>
                         <input type="text"  class="form-control" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}" placeholder="### ### ####"> <br>
                         
